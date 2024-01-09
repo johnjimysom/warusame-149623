@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Röyäl Vändäls</title>
+		<meta name="description" content="We make villians not heroes. Established 2016." />
+		<meta name="keywords" content="" />
+		<meta name="author" content=""/>
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//127.0.0.1/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+	</head>
+	<body class="demo-1">
+		<div id="container" class="container intro-effect-push">
+			<!-- Top Navigation -->
+			<header class="header">
+				<div class="bg-img"><img src="img/sample-a161c319b24e573b0fe6ac28107c870a.jpg" alt="Background Image" max-height:100%; /></div>
+				<div class="title">
+					<nav class="asstechdicks">
+						<a href="index.html" class="inactiveLink">ロイヤルヴァンダル</a>
+					</nav>
+					<h1>Röyäl   Vändäls</h1>
+				</div>
+			</header>
+			<button class="trigger" data-info="Check what we have for sale."><span>Trigger</span></button>
+			<div class="title">
+				<nav class="asstechdicks">
+						<!--class="current-demo"--> 
+						<a class="inactiveLinks" href="index.html">Shop</a>
+						<a class="inactiveLinks" href="index2.html">Updates</a>
+						<a class="inactiveLinks" href="index3.html">About</a>
+						<a class="inactiveLinks" href="index5.html">Gallery</a>
+						<a class="inactiveLinks" href="index6.html">Website</a>
+						<a class="inactiveLinks" href="index7.html">Royals and Vandals</a>
+					</nav>
+				<h1>Röyäl   Vändäls</h1>
+				<p class="sublinetext">ロイヤルヴァンダル</p>
+				<p>by <strong>Röyäl Vändäls</strong> &#8212; on <strong>November 21, 2016</strong></p>
+			</div>
+			<article class="content">
+				<div>
+					<p>This site is under constuction. 我々はまだ建設中です。 We disabled our menu links. </p>
+					<p>We are a company that sells stickers as well as apparel, accessories and so on. We just started our own website to sell our products. If you feelin' savage yet you want to feel high class buy our quality shit.</p>
+					
+					<h3>Join us Röyäl Vändäls</h3>
+					<p>Support us and we will support you. Tag our name, you can be part of roster of Röyal Vandals. We would also would like your quality fotos to be in our gallery page! You rep us, we rep you. </p>
+
+					<p>There are two groups you can join. Royals or Vandals. You will represent the group by the year you join and class. Your name or group will be posted in our official "Royal and Vandals" roster page!</p>
+					
+					<h3>Röyäl Vändäls' Vision</h3>
+					<p>We post all fan favorites, from doujins, anime, hentai, memes, and so forth. If there is something you want on as a sticker or anything feel free to leave a suggestion.</p>
+					
+					<blockquote>Remember, we are all Heros, Heroines, Villians, and Antiheroes。 せいぜい頑張りなさい。</blockquote>
+				
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946		
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;  
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE 
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed, 
+					noscroll, 
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+				
+				function scrollPage() {
+					scrollVal = scrollY();
+					
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+					
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+					
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 1200 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+				
+				disable_scroll();
+				
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+				
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
+	</body>
+</html>
